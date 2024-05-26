@@ -26,11 +26,14 @@ body {
 #loader {
     width: inherit;
     height: inherit;
-    margin: 0 auto;
     position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
+    inset: 0;
+    margin: auto;
+    background: transparent !important;
+    font-size: 5vw;
 }
 
 #loader-content {
@@ -69,7 +72,6 @@ button {
     background: none;
     bottom: 0;
     right: 0;
-    opacity: 0.75;
     padding: 0.5em 0.25em;
     transform: rotate(-20deg);
     display: none;
@@ -82,6 +84,7 @@ a:focus {
     text-decoration: none;
     outline: 0;
     border: none;
+    outline-style: none;
     -moz-outline-style: none;
 }
 
