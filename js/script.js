@@ -1197,8 +1197,11 @@ function printConsole() {
         'line-height: 50px',
         'text-align: center',
     ].join(';');
-    console.log(
-        ` %c Number of draw calls: ${renderer.info.render.calls} 🎋`,
-        styles,
+    setTimeout(
+        console.log.bind(
+            console,
+            ` %c Number of draw calls: ${renderer.info.render.calls} 🎋`,
+            styles,
+        ),
     );
 }
