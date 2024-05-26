@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+    <title>Home</title>
+    <link rel="icon" href="https://cdn.icon-icons.com/icons2/1975/PNG/512/tree_122921.png">
+    <meta name="author" content="Mainul Hasan Khan">
+    <meta name="description" content="describe here about this Project🤔">
+    <meta name="keywords" content="HTML,CSS,JavaScript,Three-js,Atmosphere Material">
+
+    <!-- style sheets added here ================ -->
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <div id="container" role="img" aria-label="Ghost flying around a tree">
+    </div>
+
+    <div id="loader">
+        <div id="loader-content" class="border-gradient border-gradient-purple">
+            <p>Loading Ghost 3d field... 🎋✨</p>
+        </div>
+    </div>
+
+    <button id="btn-freeze">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 99.799 42.739">
+            <defs>
+                <filter height="1.248" y="-.124" width="1.092" x="-.046" id="a" color-interpolation-filters="sRGB">
+                    <feGaussianBlur stdDeviation="1.807" />
+                </filter>
+            </defs>
+            <g id="freeze-text-blur" transform="translate(-1.18 -1.623)" filter="url(#a)" fill="none" stroke="#b0b0b0">
+                <path
+                    d="M25.636 10.552c-1.843 7.337-4.62 16.543-8.126 22.679M8.816 19.624c9.974-.372 30.667-3.216 33.64-14.363M15.053 24.726c5.363 1.364 13.934-2.697 16.442-4.535M31.022 27.845c1.609-1.694 3.847-2.611 5.576-4.158 6.37-5.7 1.953-7.319-1.418-1.701-3.897 6.496 7.813-.468 9.45-2.268M44.63 19.718c-4.05.891-13.429 16.197-2.74 9.072" />
+                <path
+                    d="M42.078 26.805c2.818-.666 4.975-1.844 7.37-3.213 10.356-5.917 6.352-12.377-3.118-.756-8.242 10.116 2.227 8.924 8.316 2.835" />
+                <path
+                    d="M52.19 25.766c2.445-1.012 4.868-2.107 7.18-3.402 9.618-5.386 3.297-8.388-2.55.189-5.712 8.377 3.361 8.05 8.598 3.685" />
+                <path
+                    d="M64.284 23.498c1.292-.693 2.596-1.363 3.875-2.079 1.033-.578 1.86-1.403 2.645-2.268 4.807-5.287-4.933-.681-2.551 1.701 2.696 2.696 11.116-6.284 3.969 1.512-.322.35-5.82 5.654-6.142 5.008-.408-.816 3.932-2.844 4.724-2.646.867.217-.713 2.941 1.04 2.552 1.237-.275 2.219-1.27 3.118-2.08" />
+                <path
+                    d="M73.828 23.498c3.162-.749 5.092-1.59 7.654-3.213 9.24-5.851-4.396-5.169-5.102 3.307-.416 4.986 10.12 2.11 12-.189M20.061 11.97c-5.567-2.034-10.471.077-14.552 4.157-2.638 2.639-2.336 5.286 1.7 5.67 1.577.15 6.195-1.06 4.726-.472-4.195 1.677-.003 1.448 2.173.756" />
+                <path
+                    d="M79.309 28.128c2.9.636 5.15.384 7.843-.472 5.975-1.902 9.454-9.107 5.575-6.52-3.217 2.144 3.86 1.413 5.197.661M18.41 26.488c-3.197 8.188-9.445 15.54-11.16 5.856" />
+                <g>
+                    <path
+                        d="M95.263 5.625c-2.024 3.49-7.167 6.601-13.293 5.438M90.832 4.215c-.295 3.694-2.873 8.353-5.304 10.54M82.172 6.43c3.077 3.028 9.31 5.886 12.554 5.707" />
+                </g>
+                <g>
+                    <path
+                        d="M28.935 28.72c-1.436 3.613-5.137 8.71-8.66 10.472M22.557 29.793c2.541 3.398 4.076 6.935 2.685 9.4M19.267 35.164c5.351.644 10.22-1.22 13.293-4.565" />
+                </g>
+            </g>
+            <g id="freeze-text-top" fill="none" stroke="#b0b0b0">
+                <g stroke-width=".5">
+                    <path
+                        d="M24.457 8.93c-1.843 7.336-4.62 16.543-8.126 22.678M7.637 18c9.974-.371 30.667-3.215 33.64-14.362M13.874 23.104c5.363 1.363 13.934-2.697 16.442-4.536M29.843 26.222c1.608-1.694 3.847-2.611 5.575-4.158 6.37-5.7 1.954-7.319-1.417-1.7-3.898 6.495 7.813-.468 9.45-2.269M43.45 18.095c-4.049.892-13.428 16.197-2.74 9.072" />
+                    <path
+                        d="M40.899 25.182c2.818-.665 4.975-1.843 7.37-3.212 10.356-5.918 6.352-12.378-3.118-.756-8.242 10.115 2.227 8.923 8.316 2.834" />
+                    <path
+                        d="M51.01 24.143c2.446-1.012 4.87-2.107 7.181-3.402 9.618-5.385 3.297-8.388-2.55.19-5.713 8.376 3.361 8.048 8.598 3.684" />
+                    <path
+                        d="M63.105 21.875c1.292-.693 2.596-1.363 3.874-2.079 1.033-.578 1.86-1.403 2.646-2.268 4.807-5.287-4.933-.681-2.551 1.701 2.696 2.696 11.115-6.284 3.969 1.512-.322.351-5.82 5.655-6.142 5.008-.409-.816 3.932-2.843 4.724-2.645.867.216-.713 2.94 1.04 2.55 1.236-.274 2.218-1.268 3.118-2.078" />
+                    <path
+                        d="M72.649 21.875c3.162-.749 5.092-1.59 7.654-3.213 9.24-5.851-4.396-5.168-5.103 3.308-.415 4.985 10.12 2.11 12.001-.19M18.882 10.347c-5.568-2.034-10.472.077-14.552 4.158-2.638 2.638-2.336 5.285 1.7 5.67 1.576.15 6.195-1.061 4.725-.473-4.194 1.677-.002 1.448 2.174.756" />
+                    <path
+                        d="M78.13 26.505c2.9.636 5.15.384 7.843-.472 5.975-1.901 9.454-9.106 5.575-6.52-3.217 2.144 3.86 1.414 5.197.661" />
+                </g>
+                <path d="M17.23 24.865c-3.196 8.189-9.444 15.54-11.159 5.857" stroke-width=".5" />
+                <g stroke-width=".3" stroke="#cb02ea">
+                    <path
+                        d="M94.084 4.002c-2.024 3.49-7.167 6.601-13.293 5.438M89.653 2.593c-.295 3.693-2.873 8.352-5.304 10.54M80.993 4.808c3.077 3.028 9.31 5.885 12.554 5.706" />
+                </g>
+                <g stroke-width=".3" stroke="#cb02ea">
+                    <path
+                        d="M27.755 27.096c-1.435 3.614-5.136 8.712-8.66 10.473M21.378 28.17c2.541 3.399 4.076 6.935 2.685 9.4M18.088 33.541c5.351.644 10.22-1.219 13.293-4.565" />
+                </g>
+            </g>
+        </svg>
+    </button>
+
+    <a id="btn-credits" href="https://codepen.io/ScavengerFrontend" title="See my other works ✨" target="blank">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100.243 64.869">
+            <g stroke="#b600ff" fill="none" stroke-width="0.65">
+                <path
+                    d="M6.306 20.754c19.708-31.89 10.876 15.74 5.345 20.045-3.46-1.73 11.437-27.263 13.363-29.533 10.268-8.83-3.12 23.463-2.884 23.01 16.317-32.634 15.996-25.134 8.898-.292" />
+                <path
+                    d="M44.926 23.16c-5.463-21.249-18.91 27.113-2.54 2.806 1.238-1.837 4.544-6.446 4.544-9.088 0-1.822-6.644 11.798-3.608 14.834C45.05 33.438 47.41 29.08 48 28.237" />
+                <path
+                    d="M57.354 22.357c-3.715-7.597-11.307 3.178-9.488 6.816 3.373 6.746 22.306-22.448 16.972-21.115-2.73.683-5.353 8.66-6.014 10.29-1.173 2.892-2.543 6.179-2.94 9.355-1.485 11.879 14.678-9.299 11.626-10.825-4.686-2.343-12.162 27.22 4.41 7.885M76.458 22.531C75.437 23.946 90.4 9.27 87.128 10.578c-3.033 1.213-9.977 12.456-8.263 15.884 1.209 2.419 8.67-8.504 2.567-8.504-.516 0-2.093.12-1.925 1.123.342 2.056 7.043-.739 7.3-.48.136.135-3.013 4.863-1.765 5.695 1.72 1.147 4.974-5.62 4.974-4.653 0 3.21-8.005 19.3-8.664 19.174-9.29-5.205 12.984-16.21 7.3-11.071" />
+                <g>
+                    <path
+                        d="M28.813 60.616c27.233-35.608 9.681-30.683 13.397-2.811M30.632 51.52c6.243-2.521 12.843-4.066 19.352-5.79M50.645 42.092c-.68 3.194-2.425 6.065-3.638 9.097M50.645 42.092c1.362 26.061-2.206-3.798 8.105-5.954M27.16 56.647c15.998-3.447 39.5-5.867 51.437-7.608" />
+                    <path d="M65.348 35.213c-10.31 2.156-6.743 32.015-8.104 5.954-.879 2.804-2.465 6.88-4.283 8.368" />
+                    <path
+                        d="M70.41 38.205c-5.682-3.964-11.978 10.042-8.6 9.428 2.67-.486 5.441-4.218 6.946-6.368.8-1.141 3.148-4.344 1.902-3.721-4.771 2.385 1.756 20.4 5.458 3.473.373-1.702.497-3.464.497-5.127" />
+                </g>
+            </g>
+        </svg>
+
+    </a>
+
+    <!-- MATCAP VERTEX SHADER -->
+    <script type="x-shader/x-vertex" id="matcap-vs">
+
+  varying vec2 vN;
+
+	void main() {
+
+		vec3 e = normalize( vec3( modelViewMatrix * vec4( position, 1.0 ) ) );
+		vec3 n = normalize( normalMatrix * normal );
+
+		vec3 r = reflect( e, n );
+		float m = 2. * sqrt( pow( r.x, 2. ) + pow( r.y, 2. ) + pow( r.z + 1., 2. ) );
+		vN = r.xy / m + .5;
+
+    gl_Position = projectionMatrix * modelViewMatrix * vec4( vec3(position), 1. );
+
+	}
+
+</script>
+
+    <!-- MATCAP FRAGMENT SHADER -->
+    <script type="x-shader/x-fragment" id="matcap-fs">
+
+  uniform sampler2D tMatCap;
+
+	varying vec2 vN;
+
+	void main() {
+		
+		vec3 base = texture2D( tMatCap, vN ).rgb;
+		gl_FragColor = vec4( base, 1.0 );
+
+	}
+	
+</script>
+
+    <!-- FLAKY SHADER  -->
+    <script type="x-shader/x-vertex" id="flaky-vs">
+//	Simplex 4D Noise 
+//	by Ian McEwan, Ashima Arts
+//
+vec4 permute(vec4 x){return mod(((x*34.0)+1.0)*x, 289.0);}
+float permute(float x){return floor(mod(((x*34.0)+1.0)*x, 289.0));}
+vec4 taylorInvSqrt(vec4 r){return 1.79284291400159 - 0.85373472095314 * r;}
+float taylorInvSqrt(float r){return 1.79284291400159 - 0.85373472095314 * r;}
+
+vec4 grad4(float j, vec4 ip){
+  const vec4 ones = vec4(1.0, 1.0, 1.0, -1.0);
+  vec4 p,s;
+
+  p.xyz = floor( fract (vec3(j) * ip.xyz) * 7.0) * ip.z - 1.0;
+  p.w = 1.5 - dot(abs(p.xyz), ones.xyz);
+  s = vec4(lessThan(p, vec4(0.0)));
+  p.xyz = p.xyz + (s.xyz*2.0 - 1.0) * s.www; 
+
+  return p;
+}
+
+float snoise(vec4 v){
+  const vec2  C = vec2( 0.138196601125010504,  // (5 - sqrt(5))/20  G4
+                        0.309016994374947451); // (sqrt(5) - 1)/4   F4
+// First corner
+  vec4 i  = floor(v + dot(v, C.yyyy) );
+  vec4 x0 = v -   i + dot(i, C.xxxx);
+
+// Other corners
+
+// Rank sorting originally contributed by Bill Licea-Kane, AMD (formerly ATI)
+  vec4 i0;
+
+  vec3 isX = step( x0.yzw, x0.xxx );
+  vec3 isYZ = step( x0.zww, x0.yyz );
+//  i0.x = dot( isX, vec3( 1.0 ) );
+  i0.x = isX.x + isX.y + isX.z;
+  i0.yzw = 1.0 - isX;
+
+//  i0.y += dot( isYZ.xy, vec2( 1.0 ) );
+  i0.y += isYZ.x + isYZ.y;
+  i0.zw += 1.0 - isYZ.xy;
+
+  i0.z += isYZ.z;
+  i0.w += 1.0 - isYZ.z;
+
+  // i0 now contains the unique values 0,1,2,3 in each channel
+  vec4 i3 = clamp( i0, 0.0, 1.0 );
+  vec4 i2 = clamp( i0-1.0, 0.0, 1.0 );
+  vec4 i1 = clamp( i0-2.0, 0.0, 1.0 );
+
+  //  x0 = x0 - 0.0 + 0.0 * C 
+  vec4 x1 = x0 - i1 + 1.0 * C.xxxx;
+  vec4 x2 = x0 - i2 + 2.0 * C.xxxx;
+  vec4 x3 = x0 - i3 + 3.0 * C.xxxx;
+  vec4 x4 = x0 - 1.0 + 4.0 * C.xxxx;
+
+// Permutations
+  i = mod(i, 289.0); 
+  float j0 = permute( permute( permute( permute(i.w) + i.z) + i.y) + i.x);
+  vec4 j1 = permute( permute( permute( permute (
+             i.w + vec4(i1.w, i2.w, i3.w, 1.0 ))
+           + i.z + vec4(i1.z, i2.z, i3.z, 1.0 ))
+           + i.y + vec4(i1.y, i2.y, i3.y, 1.0 ))
+           + i.x + vec4(i1.x, i2.x, i3.x, 1.0 ));
+// Gradients
+// ( 7*7*6 points uniformly over a cube, mapped onto a 4-octahedron.)
+// 7*7*6 = 294, which is close to the ring size 17*17 = 289.
+
+  vec4 ip = vec4(1.0/294.0, 1.0/49.0, 1.0/7.0, 0.0) ;
+
+  vec4 p0 = grad4(j0,   ip);
+  vec4 p1 = grad4(j1.x, ip);
+  vec4 p2 = grad4(j1.y, ip);
+  vec4 p3 = grad4(j1.z, ip);
+  vec4 p4 = grad4(j1.w, ip);
+
+// Normalise gradients
+  vec4 norm = taylorInvSqrt(vec4(dot(p0,p0), dot(p1,p1), dot(p2, p2), dot(p3,p3)));
+  p0 *= norm.x;
+  p1 *= norm.y;
+  p2 *= norm.z;
+  p3 *= norm.w;
+  p4 *= taylorInvSqrt(dot(p4,p4));
+
+// Mix contributions from the five corners
+  vec3 m0 = max(0.6 - vec3(dot(x0,x0), dot(x1,x1), dot(x2,x2)), 0.0);
+  vec2 m1 = max(0.6 - vec2(dot(x3,x3), dot(x4,x4)            ), 0.0);
+  m0 = m0 * m0;
+  m1 = m1 * m1;
+  return 49.0 * ( dot(m0*m0, vec3( dot( p0, x0 ), dot( p1, x1 ), dot( p2, x2 )))
+               + dot(m1*m1, vec2( dot( p3, x3 ), dot( p4, x4 ) ) ) ) ;
+
+}
+	
+#define NUM_OCTAVES 3
+	
+float fbm(vec4 x) {
+	float v = 0.0;
+	float a = 0.5;
+	vec4 shift = vec4(100.);
+	for (int i = 0; i < NUM_OCTAVES; ++i) {
+		v += a * snoise(x);
+		x = x * 2.0 + shift;
+		a *= 0.5;
+	}
+	return v;
+}
+
+float map(float value, float min1, float max1, float min2, float max2) {
+  return min2 + (value - min1) * (max2 - min2) / (max1 - min1);
+}
+
+uniform float uTime;
+uniform float uEdgeWidth;
+uniform float uFrequency;
+varying float vNoise;
+varying float vEdge;
+varying vec3 vNormal;
+varying vec3 vViewPosition;
+varying vec2 vUv;
+	
+void main() {
+	vUv = uv;
+	vNoise = fbm(vec4(position*uFrequency, 0.));
+	vNoise = map(vNoise,-0.6,0.6,0.,1. - uEdgeWidth);
+	vec4 modelViewPosition = modelViewMatrix * vec4( position, 1.0 );
+	vViewPosition = -modelViewPosition.xyz;
+	gl_Position = projectionMatrix * modelViewPosition;
+	vNormal = normalMatrix * normal;
+}
+</script>
+
+    <script type="x-shader/x-fragment" id="flaky-fs-beforeMain">
+uniform float uThreshold;
+uniform float uEdgeWidth;
+uniform vec3 uEdgeColor;
+uniform vec3 uColor;
+varying float vNoise;
+</script>
+
+    <script type="x-shader/x-fragment" id="flaky-fs">
+	float alpha = 1.0;
+	if( vNoise > uThreshold) {
+		alpha = 0.0;
+	}
+	
+	vec3 materialColor = uColor/255.;
+	vec3 edgeColor = uEdgeColor/255.;
+	
+	vec3 color = materialColor;
+	
+	if( vNoise + uEdgeWidth > uThreshold ) {
+		color = edgeColor;
+	}
+	
+vec4 diffuseColor = vec4( color, alpha );
+</script>
+
+    <!-- script added here ======================= -->
+    <script src="./assets/ghost-field/three.min.js"></script>
+    <script src="./assets/ghost-field/ghostBundle.js"></script>
+    <script src="./assets/ghost-field/ghostFlow.min.js"></script>
+    <script src="./assets/ghost-field/OBJLoaderBufferGeomUtils.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
